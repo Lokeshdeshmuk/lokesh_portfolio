@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lokesh-Portfliyo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: rgb(2, 2, 39);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Slab', serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: rgba(16, 16, 59, 0.752);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 25px;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover{
+        color: rgb(94, 136, 209);
+      }
+      .left {
+        font-size: 1.8rem;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Slab', serif;
+        letter-spacing: 3px;
+      }
+      .firstsection{
+        display: flex;
+        justify-content: space-around;
+        margin: 25px 0;
+      }
+      .firstsection_left{
+        width: 30%;
+        font-size: 2.5rem;
+        margin: 100px;
+        align-items: center;
+      }
+      .firstsection_right{
+        /* background-color: red; */
+        width: 30%;
+      }
+      .firstsection_right img{
+        width: 570px;
+        margin: 42px -181px;
+        transform: matrix();
+      }
+      .namecolor{
+        color: rgb(59, 140, 245);
+        font-size: 110%;
+      }
+      #element{
+        color: rgb(94, 136, 209);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left"><b>Lokesh's Portfliyo</b></div>
+        <div class="right">
+          <ul>
+              <li><a href="/">Projects</a></li>
+              <li><a href="/">Contect Me</a></li>
+              <li><a href="/">About</a></li>
+              <li><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="firstsection_left">
+                Hello, My Name is 
+                <div><span class="namecolor">Lokesh Deshmukh</span></div>
+                <div> And I Am a</div>
+                <span id="element"></span>
+            </div>
+            <div class="firstsection_right">
+                <img src="newbg.png" alt="">
+                
+            </div>
+
+        </section>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed('#element', {
+            strings: ['Web Devloper', 'Graphic Designer','Web Designer.'],
+            typeSpeed: 50,
+          }
+          );
+        </script>
+  </body>
+</html>
