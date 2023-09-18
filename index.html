@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lokesh-Portfliyo</title>
+    <title>Lokesh-Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
@@ -57,6 +57,36 @@
         margin: 100px;
         align-items: center;
       }
+      .buttons{
+        padding: 10px;
+      }
+      .btn1:hover{
+        color: aqua;
+      }
+      .btn2:hover{
+        color: aqua;
+      }
+      .btn1{
+        padding: 9px;
+        background-color: rgb(16, 16, 59);
+        color: white;
+        border: 2px solid white;
+        border-radius: 11px;
+        cursor: pointer;
+        font-size: 15px;
+        margin: 20px -12px;
+      }
+      .btn2{
+        padding: 9px;
+        background-color: rgb(16, 16, 59);
+        color: white;
+        border: 2px solid white;
+        border-radius: 11px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 19px 23px;
+      }
+
       .firstsection_right{
         /* background-color: red; */
         width: 30%;
@@ -78,13 +108,13 @@
   <body>
     <header>
       <nav>
-        <div class="left"><b>Lokesh's Portfliyo</b></div>
+        <div class="left"><b>Lokesh's Portfolio</b></div>
         <div class="right">
           <ul>
-              <li><a href="/">Projects</a></li>
-              <li><a href="/">Contect Me</a></li>
-              <li><a href="/">About</a></li>
               <li><a href="/">Home</a></li>
+              <li><a href="/">Projects</a></li>
+              <li><a href="/">About</a></li>
+              <li><a href="/">Contect Me</a></li>
           </ul>
         </div>
       </nav>
@@ -96,6 +126,11 @@
                 <div><span class="namecolor">Lokesh Deshmukh</span></div>
                 <div> And I Am a</div>
                 <span id="element"></span>
+                <div class="buttons">
+                  <a href="Lokesh_Deshmukh_Resume.pdf" download="Lokesh_Deshmukh_Resume">
+                  <button class="btn1">Download Resume</button></a>
+                  <button class="btn2" onclick="window.location.href = 'https://github.com/Lokeshdeshmuk';">Visit Github</button>
+                </div>
             </div>
             <div class="firstsection_right">
                 <img src="newbg.png" alt="">
@@ -110,6 +145,7 @@
             typeSpeed: 50,
           }
           );
+          
         </script>
   </body>
 </html>
