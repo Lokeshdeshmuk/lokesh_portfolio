@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lokesh-Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
         background-color: rgb(2, 2, 39);
         color: white;
-        font-family: 'Poppins', sans-serif;
-        font-family: 'Roboto Slab', serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto Slab", serif;
       }
       * {
         margin: 0;
@@ -33,40 +36,43 @@
         list-style: none;
         margin: 25px;
       }
-      nav ul li a{
+      nav ul li a {
         text-decoration: none;
         color: white;
       }
-      nav ul li a:hover{
+      nav ul li a:hover {
+        color: rgb(94, 136, 209);
+      }
+      nav ul li a1 {
         color: rgb(94, 136, 209);
       }
       .left {
         font-size: 1.8rem;
-        font-family: 'Poppins', sans-serif;
-        font-family: 'Roboto Slab', serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto Slab", serif;
         letter-spacing: 3px;
       }
-      .firstsection{
+      .firstsection {
         display: flex;
         justify-content: space-around;
         margin: 25px 0;
       }
-      .firstsection_left{
+      .firstsection_left {
         width: 30%;
         font-size: 2.5rem;
         margin: 100px;
         align-items: center;
       }
-      .buttons{
+      .buttons {
         padding: 10px;
       }
-      .btn1:hover{
+      .btn1:hover {
         color: aqua;
       }
-      .btn2:hover{
+      .btn2:hover {
         color: aqua;
       }
-      .btn1{
+      .btn1 {
         padding: 9px;
         background-color: rgb(16, 16, 59);
         color: white;
@@ -76,7 +82,7 @@
         font-size: 15px;
         margin: 20px -12px;
       }
-      .btn2{
+      .btn2 {
         padding: 9px;
         background-color: rgb(16, 16, 59);
         color: white;
@@ -86,22 +92,67 @@
         font-size: 16px;
         margin: 19px 23px;
       }
-
-      .firstsection_right{
+      .firstsection_right {
         /* background-color: red; */
         width: 30%;
       }
-      .firstsection_right img{
+      .firstsection_right img {
         width: 570px;
         margin: 42px -181px;
         transform: matrix();
       }
-      .namecolor{
+      .namecolor {
         color: rgb(59, 140, 245);
         font-size: 110%;
       }
-      #element{
+      #element {
         color: rgb(94, 136, 209);
+      }
+      @media screen and (max-width: 768px) {
+        .left {
+          font-size: 30px;
+          font-family: "Roboto Slab", serif;
+          letter-spacing: 3px;
+          margin: 5px 26px;
+        }
+
+        .firstsection_left {
+          width: 100%; /* Full width for mobile */
+          margin: 0; /* Remove margin in mobile view */
+          text-align: center;
+          margin: 17px 0px 0px 0px; /* Center-align content in mobile view */
+        }
+        .firstsection_right img {
+          width: 230px;
+          height: 230px;
+          margin: 0;
+          margin: -23px 0px 0px 76px;
+        }
+        .buttons {
+          /* display: flex; */
+          flex-direction: row; /* Stack buttons on top of each other in mobile view */
+          align-items: center; /* Center-align buttons in mobile view */
+        }
+        .firstsection_right img {
+          width: 250px;
+          height: 250px;
+          margin: 0;
+          margin: -3px 0px 0px 54px;
+        }
+        nav {
+          height: auto; /* Adjust navigation bar height for mobile */
+          background-color: rgba(16, 16, 59, 0.752);
+          display: initial;
+        }
+        nav ul {
+          flex-direction: initial; /* Stack navigation links in mobile view */
+        }
+        nav ul li {
+          margin: 10px 10px; /* Add spacing between navigation links in mobile view */
+        }
+        .firstsection {
+          display: initial;
+        }
       }
     </style>
   </head>
@@ -111,41 +162,44 @@
         <div class="left"><b>Lokesh's Portfolio</b></div>
         <div class="right">
           <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/">Projects</a></li>
-              <li><a href="/">About</a></li>
-              <li><a href="/">Contect Me</a></li>
+            <li><a1 href="/">Home</a1></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="contect.html">Contect Me</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-        <section class="firstsection">
-            <div class="firstsection_left">
-                Hello, My Name is 
-                <div><span class="namecolor">Lokesh Deshmukh</span></div>
-                <div> And I Am a</div>
-                <span id="element"></span>
-                <div class="buttons">
-                  <a href="Lokesh_Deshmukh_Resume.pdf" download="Lokesh_Deshmukh_Resume">
-                  <button class="btn1">Download Resume</button></a>
-                  <button class="btn2" onclick="window.location.href = 'https://github.com/Lokeshdeshmuk';">Visit Github</button>
-                </div>
-            </div>
-            <div class="firstsection_right">
-                <img src="newbg.png" alt="">
-                
-            </div>
-
-        </section>
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-        <script>
-          var typed = new Typed('#element', {
-            strings: ['Web Devloper', 'Graphic Designer','Web Designer.'],
-            typeSpeed: 50,
-          }
-          );
-          
-        </script>
+      <section class="firstsection">
+        <div class="firstsection_left">
+          Hello, My Name is
+          <div><span class="namecolor">Lokesh Deshmukh</span></div>
+          <div>And I Am a</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <a href="Lokesh_Deshmukh_Resume.pdf" download="Lokesh_Deshmukh">
+              <button class="btn1">Download Resume</button></a
+            >
+            <button
+              class="btn2"
+              onclick="window.location.href = 'https://github.com/Lokeshdeshmuk';"
+            >
+              Visit Github
+            </button>
+          </div>
+        </div>
+        <div class="firstsection_right">
+          <img src="newbg.png" alt="" />
+        </div>
+      </section>
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed("#element", {
+          strings: ["Web Devloper", "Graphic Designer", "Web Designer."],
+          typeSpeed: 50,
+        });
+      </script>
+    </main>
   </body>
 </html>
